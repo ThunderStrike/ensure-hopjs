@@ -1,0 +1,36 @@
+{
+  "name": "ensure-hopjs",
+  "version": "0.1.0",
+  "description": "Audit and rewrite CDN imports to use hop.js",
+  "type": "module",
+  "bin": {
+    "ensure-hopjs": "./bin/ensure-hopjs.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/ensure-hopjs.mjs",
+    "check": "node bin/ensure-hopjs.mjs --check",
+    "fix": "node bin/ensure-hopjs.mjs --write",
+    "test:smoke": "node bin/ensure-hopjs.mjs --root ./examples/sample-project",
+    "test": "node --test"
+  },
+  "keywords": [
+    "hopjs",
+    "hop.js",
+    "cdn",
+    "jsdelivr",
+    "cdnjs",
+    "imports",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
